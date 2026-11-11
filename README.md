@@ -25,10 +25,6 @@ As atividades relacionadas à qualidade e aos testes serão distribuídas entre 
 
 ## Cenário
 
-[A definir...]
-
-Exemplo:
-
 O projeto busca auxiliar estudantes na organização de suas atividades acadêmicas, permitindo visualizar tarefas, prioridades e andamento das atividades em um único sistema.
 
 ## Produto
@@ -52,7 +48,8 @@ O sistema terá inicialmente as seguintes funcionalidades:
 As tecnologias utilizadas no desenvolvimento serão:
 
 - Git e GitHub
-- A definir e planejar...
+- 
+- A definir e planejar as demais tecnologias...
 
 ## Organização do projeto
 
@@ -70,10 +67,6 @@ Cada atividade possui um responsável e será movimentada conforme o andamento d
 ## Como acessar o produto
 
 [....]
-
-Caso o sistema ainda não esteja publicado:
-
-O projeto encontra-se disponível neste repositório e será publicado durante o desenvolvimento, caso seja possível.
 
 ## Planejamento
 
