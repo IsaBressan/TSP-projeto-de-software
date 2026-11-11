@@ -48,7 +48,7 @@ O sistema terá inicialmente as seguintes funcionalidades:
 As tecnologias utilizadas no desenvolvimento serão:
 
 - Git e GitHub
-- 
+  
 - A definir e planejar as demais tecnologias...
 
 ## Organização do projeto
@@ -84,7 +84,7 @@ Planilha de registros do tempo:
 
 Os registros das reuniões e checkpoints do grupo estão disponíveis em:
 
-`....`
+
 
 ## Qualidade e testes
 
