@@ -1,8 +1,6 @@
 # TSP-projeto-de-software
 Esse repositório tem como objetivo melhorar o desempenho das equipes de desenvolvimento de software.
 
-# TSP-projeto-de-software
-
 Projeto desenvolvido para a disciplina de ERGONOMIA DE SISTEMAS COMPUTACIONAIS E IHC, utilizando conceitos do Team Software Process (TSP).
 
 ## Equipe
