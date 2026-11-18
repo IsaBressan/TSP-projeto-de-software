@@ -1,1 +1,98 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCafé | Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <aside class="sidebar">
+            <div class="logo">
+                <span>☕</span>
+                <h2>DevCafé</h2>
+            </div>
+
+            <nav>
+                <a href="#" class="active">▦ Visão geral</a>
+                <a href="#">◷ Minhas tarefas</a>
+                <a href="#">✓ Concluídas</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Organize seu dia.</p>
+                <small>Um café de cada vez ☕</small>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Olá, desenvolvedor! 👋</h1>
+                    <p>Vamos organizar suas tarefas de hoje?</p>
+                </div>
+
+                <div class="profile">
+                    <span>☕</span>
+                </div>
+            </header>
+
+            <section class="summary">
+                <div class="summary-card">
+                    <span>Total de tarefas</span>
+                    <h2 id="total-tasks">0</h2>
+                </div>
+
+                <div class="summary-card">
+                    <span>Pendentes</span>
+                    <h2 id="pending-tasks">0</h2>
+                </div>
+
+                <div class="summary-card">
+                    <span>Em andamento</span>
+                    <h2 id="progress-tasks">0</h2>
+                </div>
+
+                <div class="summary-card">
+                    <span>Concluídas</span>
+                    <h2 id="completed-tasks">0</h2>
+                </div>
+            </section>
+
+            <section class="tasks-section">
+                <div class="section-header">
+                    <div>
+                        <h2>Minhas tarefas</h2>
+                        <p>Acompanhe e organize suas atividades.</p>
+                    </div>
+
+                    <button id="add-task-btn">+ Nova tarefa</button>
+                </div>
+
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="pending">Pendentes</button>
+                    <button class="filter-btn" data-filter="progress">Em andamento</button>
+                    <button class="filter-btn" data-filter="completed">Concluídas</button>
+                </div>
+
+                <div id="task-list" class="task-list">
+                    <div class="empty-state">
+                        <span>☕</span>
+                        <h3>Nenhuma tarefa por aqui!</h3>
+                        <p>Adicione sua primeira tarefa para começar.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
