@@ -279,3 +279,148 @@ button {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* CARTÕES DE TAREFAS */
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px;
+    background: #fdfbf9;
+    border: 1px solid #eee7e1;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.task-card:hover {
+    border-color: #c7a58f;
+    box-shadow: 0 4px 12px rgba(59, 43, 39, 0.06);
+}
+
+.task-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-info h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.task-info p {
+    color: #897e77;
+    font-size: 14px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.task-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.priority,
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.priority.low {
+    background: #e4f2e5;
+    color: #397746;
+}
+
+.priority.medium {
+    background: #fff0d5;
+    color: #987027;
+}
+
+.priority.high {
+    background: #fbe2df;
+    color: #b34e43;
+}
+
+.status {
+    background: #eee9e5;
+    color: #66574f;
+}
+
+/* CONTROLES DAS TAREFAS */
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.status-select {
+    padding: 9px;
+    border: 1px solid #e5dbd3;
+    border-radius: 7px;
+    background: white;
+    color: #493a34;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 9px 12px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.edit-btn {
+    background: #eee5de;
+    color: #76503c;
+}
+
+.edit-btn:hover {
+    background: #dfcbbd;
+}
+
+.delete-btn {
+    background: #fbe8e6;
+    color: #b34e43;
+}
+
+.delete-btn:hover {
+    background: #f4d0cc;
+}
+
+/* ACESSIBILIDADE E RESPONSIVIDADE */
+button:focus-visible,
+select:focus-visible {
+    outline: 3px solid #c49b7c;
+    outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+    .task-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-actions {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .task-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-actions button,
+    .status-select {
+        width: 100%;
+    }
+}
+
